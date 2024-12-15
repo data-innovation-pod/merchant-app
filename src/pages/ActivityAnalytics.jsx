@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Button, Header, Pie } from "../components";
-import { ecomPieChartData, genderPieChartData } from "../data/dummy";
+import { ecomPieChartData } from "../data/dummy";
 import Bar from "./Charts/Bar";
 import { useStateContext } from "../contexts/ContextProvider";
 import {
@@ -11,10 +11,9 @@ import {
 } from "@inrupt/solid-client-authn-browser";
 import { getPodUrlAll, getSolidDataset } from "@inrupt/solid-client";
 import { DialogComponent } from "@syncfusion/ej2-react-popups";
-import { dialog } from "@syncfusion/ej2/spreadsheet";
 
 const ActivityAnalytics = () => {
-  const { currentColor, currentMode } = useStateContext();
+  const { currentColor } = useStateContext();
   const [code, setCode] = useState("");
   const [visibility, setDialogVisibility] = useState(false);
 

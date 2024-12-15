@@ -1,9 +1,9 @@
 import React from "react";
-import { FiBarChart, FiCreditCard, FiShoppingBag } from "react-icons/fi";
+import { FiBarChart, FiShoppingBag } from "react-icons/fi";
 import { BiSolidDiscount } from "react-icons/bi";
 import { IoMdContacts } from "react-icons/io";
 import { MdOutlineSupervisorAccount } from "react-icons/md";
-import { BsBoxSeam, BsCurrencyDollar, BsShield } from "react-icons/bs";
+import { BsBoxSeam } from "react-icons/bs";
 
 export const barChartData = [
   [
@@ -101,11 +101,6 @@ export const ecomPieChartData = [
   { x: "2021", y: 10, text: "Obese" },
 ];
 
-export const genderPieChartData = [
-  { x: "2024", y: 60, text: "Male" },
-  { x: "2024", y: 40, text: "Female" },
-];
-
 export const earningData = [
   {
     icon: <MdOutlineSupervisorAccount />,
@@ -118,18 +113,18 @@ export const earningData = [
   },
   {
     icon: <BsBoxSeam />,
-    amount: "4,396",
+    amount: "100,000",
     percentage: "+23%",
-    title: "Products",
+    title: "Data Syncs",
     iconColor: "rgb(255, 244, 229)",
     iconBg: "rgb(254, 201, 15)",
     pcColor: "green-600",
   },
   {
     icon: <FiBarChart />,
-    amount: "423,39",
+    amount: "278",
     percentage: "+38%",
-    title: "Sales",
+    title: "Promotion Pushes",
     iconColor: "rgb(228, 106, 118)",
     iconBg: "rgb(255, 244, 229)",
 
@@ -137,9 +132,9 @@ export const earningData = [
   },
   {
     icon: <FiBarChart />,
-    amount: "39,354",
+    amount: "208",
     percentage: "-12%",
-    title: "Refunds",
+    title: "Promotion Conversions",
     iconColor: "rgb(0, 194, 146)",
     iconBg: "rgb(235, 250, 242)",
     pcColor: "red-600",
@@ -148,25 +143,25 @@ export const earningData = [
 
 export const promotionsData = [
   {
-    title: "Black Friday",
+    title: "Shoe",
     date: "12th Dec",
     status: "Active",
     color: "green",
   },
   {
-    title: "Christmas",
+    title: "Supplements",
     date: "25th Dec",
     status: "Inactive",
     color: "red",
   },
   {
-    title: "New Year",
+    title: "Drinks",
     date: "1st Jan",
     status: "Active",
     color: "green",
   },
   {
-    title: "Valentine's Day",
+    title: "Steak",
     date: "14th Feb",
     status: "Inactive",
     color: "red",
@@ -194,54 +189,3 @@ export const barPrimaryYAxis = {
   lineStyle: { width: 0 },
   labelStyle: { color: "transparent" },
 };
-
-export const userProfileData = [
-  {
-    icon: <BsCurrencyDollar />,
-    title: "My Profile",
-    desc: "Account Settings",
-    iconColor: "#03C9D7",
-    iconBg: "#E5FAFB",
-  },
-  {
-    icon: <BsShield />,
-    title: "My Inbox",
-    desc: "Messages & Emails",
-    iconColor: "rgb(0, 194, 146)",
-    iconBg: "rgb(235, 250, 242)",
-  },
-  {
-    icon: <FiCreditCard />,
-    title: "My Tasks",
-    desc: "To-do and Daily Tasks",
-    iconColor: "rgb(255, 244, 229)",
-    iconBg: "rgb(254, 201, 15)",
-  },
-];
-
-export const themeColors = [
-  {
-    name: "blue-theme",
-    color: "#1A97F5",
-  },
-  {
-    name: "green-theme",
-    color: "#03C9D7",
-  },
-  {
-    name: "purple-theme",
-    color: "#7352FF",
-  },
-  {
-    name: "red-theme",
-    color: "#FF5C8E",
-  },
-  {
-    name: "indigo-theme",
-    color: "#1E4DB7",
-  },
-  {
-    color: "#FB9678",
-    name: "orange-theme",
-  },
-];
